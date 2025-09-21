@@ -1,4 +1,4 @@
-
+/* Uploaded web on github */
 	 * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: Arial, sans-serif; }
 
@@ -28,32 +28,67 @@
       font-weight: bold;    }
 	  
     .logo span { color: white; }
+	
+	
 
-    /* Search box */
+	/* Search Box Container */
     .search-box {
       display: flex;
-      border: 1px solid #f26a21;
-      border-radius: 4px;
-      overflow: hidden;
-      width: 40%;    }
-	  
-    .search-box select {
-      border: none;
-      padding: 8px;
-      outline: none;    }
-	  
+      align-items: center;
+      width: 100%;
+	  height: 40px;
+	  border:#;
+      opacity:70%; 
+      max-width: 500px;
+      background: white;
+      border-radius: 30px;
+      padding: 8px 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Input */
     .search-box input {
-      border: none;
       flex: 1;
-      padding: 8px;
-      outline: none;    }
-	  
-    .search-box button {
-      background: #f26a21;
       border: none;
-      padding: 0 15px;
-      color: #fff;
-      cursor: pointer;    }
+      outline: none;
+      font-size: 16px;
+      padding: 10px;
+	  border: #; 
+      border-radius: 30px;
+    }
+
+    /* Icons */
+    .search-icons button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      margin-left: 8px;
+      color: #666;
+      transition: all 0.3s ease;
+    }
+    .search-icons button:hover {
+      color: #ff6600;
+      transform: scale(1.1);
+    }
+
+    /* Responsive */
+    @media(max-width: 600px) {
+      .search-box {
+        flex-direction: row;
+        padding: 6px 10px;
+      }
+      .search-box input {
+        font-size: 14px;
+      }
+      .search-icons button {
+        font-size: 16px;
+      }
+    }
+
+
+
+
 
 
 
@@ -245,7 +280,7 @@
 
 /* Hero Section */
 .hero {
-  height: 350px;
+  height: 250px;
   background: url('https://source.unsplash.com/1200x400/?cargo,shipping,containers') center/cover;
   display: flex;
   flex-direction: column;
@@ -253,16 +288,16 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  border:#;}
+  border: #;}
   
 .search-overlay {
   display: flex;
   background: #fff;
-   opacity:70%;
+  opacity:70%;
   border-radius: 25px;
   overflow: hidden;
-  
   box-shadow: 0 3px 6px rgba(0,0,0,0.2);}
+  
 .search-overlay input {
   padding: 12px 15px;
   border: none;
@@ -299,12 +334,57 @@
   color: #fff;}
 
 
-
+/* Footer Section start from here*/
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 60px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+        
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: #0056b3;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a:hover {
+            color: #ffc107;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
 
 	
 
 
+	
 /* Responsive Styles */
 
 /* Laptop / Large screens (default above 1200px handled by base styles) */

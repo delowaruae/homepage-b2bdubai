@@ -1,3 +1,5 @@
+
+  <!-- Uploaded web on github on Git hub-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,321 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>B2BDubai24 Navbar</title>
     <link rel="stylesheet" href="style.css">
-	<style>
-	 * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; }
-
-
-/* Background Video */
-    .video-bg {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;    }
-	  
-    /* Top Bar */
-    .topbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-	  background: #f26a21;
-      padding: 12px 20px;
-      border-bottom: 1px solid #eee;
-	  border: #;    }
-	  
-
-    .logo {
-      font-size: 22px;
-      font-weight: bold;    }
-	  
-    .logo span { color: white; }
-
-    /* Search box */
-    .search-box {
-      display: flex;
-      border: 1px solid #f26a21;
-      border-radius: 4px;
-      overflow: hidden;
-      width: 40%;    }
-	  
-    .search-box select {
-      border: none;
-      padding: 8px;
-      outline: none;    }
-	  
-    .search-box input {
-      border: none;
-      flex: 1;
-      padding: 8px;
-      outline: none;    }
-	  
-    .search-box button {
-      background: #f26a21;
-      border: none;
-      padding: 0 15px;
-      color: #fff;
-      cursor: pointer;    }
-
-
-
-.dropdown-container {
-      display: flex;
-      align-items: center;
-      gap: 30px;    }
-
-    /* Common dropdown style */
-    .dropdown {
-      position: relative;
-      cursor: pointer;    }
-	  
-    .dropdown-toggle {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      font-size: 16px;    }
-	  
-    .dropdown-toggle img {
-      width: 20px;
-      height: 14px;
-      border: 1px solid #ddd;    }
-	  
-    .dropdown-menu {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background: #fff;
-      border: 1px solid #ddd;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      min-width: 120px;
-      z-index: 100;    }
-	  
-    .dropdown-menu div {
-      padding: 8px 12px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 14px;    }
-	  
-    .dropdown-menu div img {
-      width: 20px;
-      height: 14px;
-      border: 1px solid #ddd;    }
-	  
-    .dropdown-menu div:hover {
-      background: #f36c21;
-      color: #fff;    }
-	  
-    .dropdown:hover .dropdown-menu {
-      display: block;    }
-	  
-
-
-    /* Right options */
-    .top-options {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      font-size: 14px;    }
-	  
-    .top-options a { text-decoration: none; color: #333; }
-
-    /* Hamburger menu */
-    .menu {
-      position: relative;
-      display: inline-block;    }
-	  
-    .menu-icon {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      padding: 6px;    }
-	  
-    .menu-icon span {
-      width: 25px;
-      height: 3px;
-      background: #333;
-      border-radius: 3px;    }
-	  
-
-    /* Dropdown menu for hamburger */
-    .menu-list {
-      display: none;
-      position: absolute;
-      right: 0;
-      top: 100%;
-      background: #333;
-      list-style: none;
-      min-width: 160px;
-      z-index: 100;     }
-	  
-	  
-    .menu-list li a {
-      display: block;
-      padding: 10px;
-      color: #fff;
-      text-decoration: none;    }
-	  
-	  
-    .menu-list li a:hover {
-      background: #444;    }
-	  
-	  
-    .menu:hover .menu-list {
-      display: block;    }
-	  
-	  
-
-    /* Browse Categories Button */
-    .browse-btn {
-      background:transparent;
-      color: #fff;
-      padding: 12px 15px;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-      position: relative;    }
-	  
-	  
-    .browse-btn:hover { background: #d45c1c; }
-
-    /* Browse dropdown */
-    .browse-dropdown {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background: #fff;
-      border: 1px solid #ddd;
-      list-style: none;
-      min-width: 200px;
-      z-index: 99;    }
-	  
-    .browse-dropdown li a {
-      display: block;
-      padding: 10px;
-      color: #333;
-      text-decoration: none;    }
-	  
-    .browse-dropdown li a:hover { background: #f2f2f2; }
-    .browse-btn:hover .browse-dropdown {
-      display: block;    }
-	  
-
-    /* Main nav bar */
-    nav {
-      background: transparent;
-      display: flex;
-      align-items: center;
-	  border: #;
-      padding: 0 20px;    }
-	  
-    .nav-links {
-      display: flex;
-      list-style: none;
-      margin-left: 20px;
-      gap: 20px;    }
-	  
-    .nav-links li { position: relative; }
-    .nav-links a {
-      display: block;
-      padding: 12px;
-      color: #fff;
-      text-decoration: none;
-      font-size: 15px;    }
-	  
-    .nav-links a:hover { background: #333; }
-
-    /* Dropdown */
-    .nav-links li ul {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background: #333;
-      list-style: none;
-      display: none;
-      min-width: 160px;    }
-	  
-    .nav-links li:hover ul { display: block; }
-    .nav-links li ul li a { padding: 10px; display: block; }
-
-   
-
-
-/* Hero Section */
-.hero {
-  height: 350px;
-  background: url('https://source.unsplash.com/1200x400/?cargo,shipping,containers') center/cover;
-  display: flex;
-  flex-direction: column;
-  background: transparent;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  border:#;}
-  
-.search-overlay {
-  display: flex;
-  background: #fff;
-   opacity:70%;
-  border-radius: 25px;
-  overflow: hidden;
-  
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);}
-.search-overlay input {
-  padding: 12px 15px;
-  border: none;
-  outline: none;
-  min-width: 300px;}
-  
-.search-overlay button {
-  background: #ff6600;
-  border: none;
-  color: #fff;
-  padding: 12px 25px;
-  cursor: pointer;
-  transition: 0.3s;}
-  
-.search-overlay button:hover {
-  background: #e65500;}
-  
-.tags {
-  margin-top: 15px2px solid blue;
-  border:#;
-  opacity:70%;
-  background: transparent;}
-  
-.tags span {
-  display: inline-block;
-  margin:5px;
-  padding: 8px 15px;
-  background: #f5f5f5;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.3s;}
-.tags span:hover {
-  background: #ff6600;
-  color: #fff;}
-
-
-
-
-
-   /* Responsive */
-    @media (max-width: 992px) {
-      .search-box { width: 60%; }
-    }
-    
-	@media (max-width: 768px) {
-      .search-box { display: none; }
-      .top-options { display: none; }
-    }
- 
-	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	
   
 </head>
 <body>
@@ -333,16 +23,7 @@
   <!-- Top bar -->
   <div class="topbar">
     <div class="logo">B2B<span>Dubai24</span></div>
-    <div class="search-box">
-      <select>
-        <option>All Categories</option>
-        <option>Electronics</option>
-        <option>Fashion</option>
-        <option>Home</option>
-      </select>
-      <input type="text" placeholder="Search in...">
-      <button>🔍</button>
-    </div>
+
     <div class="top-options">
       <a href="#">♡ Wishlist</a>
       <a href="#">⇄ Compare</a>
@@ -437,10 +118,32 @@
   
   
   <section class="hero">
-    <div class="search-overlay">
-      <input type="text" placeholder="Search Products...">
-      <button>Search</button>
+  
+  <!-- Search Section -->
+  <div class="search-box">
+    <input type="text" placeholder="Search in..." id="searchInput">
+
+    <div class="search-icons">
+      <!-- Camera Upload -->
+      <button class="camera" title="Picture Search" onclick="uploadImage()">
+        <i class="fa fa-camera"></i>
+      </button>
+
+      <!-- Voice Search -->
+      <button title="Voice Search" onclick="startVoiceSearch()">
+        <i class="fa fa-microphone"></i>
+      </button>
+
+      <!-- Normal Search -->
+      <button title="Search" onclick="searchDocument()">
+        <i class="fa fa-search"> </i>
+      </button>
     </div>
+  </div>
+
+  <!-- Hidden File Input -->
+  <input type="file" id="fileInput" accept="image/*" style="display:none">
+	
     <div class="tags">
       <span>Drills</span>
       <span>Paint</span>
@@ -454,7 +157,115 @@
   </section>
   
   
+  <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About B2B Dubai24</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Business Services</h3>
+                    <ul>
+                        <li><a href="#">Become a Seller</a></li>
+                        <li><a href="#">Trade Assurance</a></li>
+                        <li><a href="#">Logistics Service</a></li>
+                        <li><a href="#">Advertising Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Stay Connected</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 B2B Dubai24. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script>
+    // Normal Search Function
+    function searchDocument() {
+      let query = document.getElementById("searchInput").value.trim();
+      if(query) {
+        alert("Searching for: " + query);
+        // Example: window.location.href = "search.html?q=" + encodeURIComponent(query);
+      } else {
+        alert("Please enter a search term.");
+      }
+    }
+
+    // Camera Upload Search
+    function uploadImage() {
+      document.getElementById("fileInput").click();
+      document.getElementById("fileInput").onchange = function(event) {
+        let file = event.target.files[0];
+        if(file) {
+          alert("Image uploaded: " + file.name);
+          // Example: Upload image to server for search
+        }
+      }
+    }
+
+    // Voice Search
+    function startVoiceSearch() {
+      if (!('webkitSpeechRecognition' in window)) {
+        alert("Voice search not supported in this browser.");
+        return;
+      }
+
+      let recognition = new webkitSpeechRecognition();
+      recognition.lang = "en-US";
+      recognition.start();
+
+      recognition.onresult = function(event) {
+        let transcript = event.results[0][0].transcript;
+        document.getElementById("searchInput").value = transcript;
+        alert("Voice Input: " + transcript);
+      };
+    }
+  </script>
   
   
 </body>
 </html>
+
